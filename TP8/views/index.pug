@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3.teal
+                h3 Upload de um ficheiro
+            .w3-container
+                form.w3-container(id="myFichForm")
+                    lable.w3-teal
+                        b Ficheiro
+                    input.w3-input.w3-boarder.w3-light-grey(type='file', name="ficheiro")
+                    lable.w3-teal
+                        b Descrição
+                    input.w3-input.w3-boarder.w3-light-grey(type='text', name="desc", id="descricao") 
+                    button.w3-button.w3-round-large.w3-teal(id="adicionar") Adicionar Ficheiro
+            .w3-container
+                br
+                br
+                table.w3-table-all(id="paras", style="table-layout: fixed")  
+            footer.w3-container.w3.teal
+                address Gerado por FormApp
+    

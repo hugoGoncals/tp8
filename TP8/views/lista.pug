@@ -1,0 +1,12 @@
+tr
+    th Descrição
+    th Caminho
+    th Opção
+each ficheiro, index in lista
+    if ficheiro.estado==1
+        tr
+            td= ficheiro.descricao
+            td
+                a(href= ficheiro.path)= ficheiro.path
+            td
+                button(class="remove", value=index).w3-button.w3-black Remover
